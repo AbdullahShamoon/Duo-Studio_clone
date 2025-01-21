@@ -43,9 +43,9 @@ main.addEventListener("mousemove", (e) => {
     // cursor.style.top = `${e.y}px`;
 
     gsap.to(cursor, {
-        left : `${e.x}px`,
-        top : `${e.y}px`,
-        duration: 0.3
+        left : `${e.x + 10}px`,
+        top : `${e.y + 10}px`,
+        duration: 0.2
     })
 })
 
@@ -103,4 +103,33 @@ let tl3 = gsap.timeline({
 })
 tl3.to(".main", {
     backgroundColor: "#0f0d0d"
+})
+
+
+//Animating Page-5
+let boxes = document.querySelectorAll(".box");
+
+boxes.forEach((box) => {
+    box.addEventListener("mouseenter", () => {
+        let att = box.getAttribute("data-image");
+        // cursor.style.height="100px";
+        // cursor.style.width="100px";
+        gsap.to(cursor, {
+            backgroundImage: `url(${att})`,
+            height:"260px",
+            width:"400px",
+            borderRadius:"0",
+            duration: 0
+        })
+    })
+    box.addEventListener("mouseleave", () => {
+        let att = box.getAttribute("data-image");
+        gsap.to(cursor, {
+            backgroundImage: `none`,
+            height:"20px",
+            width:"20px",
+            borderRadius:"50%",
+            duration: 0
+        })
+    })
 })
