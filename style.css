@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+/* Cursor */
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #edbfff;
+    border-radius: 50%;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+
+.main {
+    background-color: #0f0d0d;
+}
+
+
+/* Page-1 */
+
+
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+/* NAV */
+.nav {
+    height: 50px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.nav img {
+    height: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav h5:nth-child(1) {
+    border-bottom: 1px solid white;
+}
+
+.circle {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+/* TEXT */
+
+.page1 h1 {
+    font-size: 8vw;
+    font-weight: 300;
+    margin-top: 9vw;
+    margin-left: 6vw;
+}
+
+.page1 h2 {
+    font-size: 8vw;
+    font-weight: 300;
+    margin-left: 28vw;
+}
+
+.page1 video {
+    width: 60%;
+    margin-top: 8vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Page-2 */
+
+.page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 5vw;
+    border-bottom: 2px solid #5a5a5a;
+    position: relative;
+    z-index: 10;
+}
+
+.page2 h2 {
+    font-size: 7vw;
+    font-weight: 300;
+    margin-top: 6vw;
+    /* margin-left: 5vw; */
+    color: #111;
+}
+
+.page2-content {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 5vw; */
+    /* background-color: red; */
+}
+
+.page2-left {
+    /* background-color: blue; */
+    width: 40%;
+}
+
+.page2-left h2 {
+
+    /* font-weight:200; */
+    font-size: 4vw;
+    color: #111;
+    line-height: 45px;
+}
+
+.page2-right {
+    /* background-color: green; */
+    width: 24%;
+}
+
+.page2-right p {
+    font-size: 1.4vw;
+    font-weight: 300;
+    margin-bottom: 2vw;
+    color: #111;
+}
+
+.page2-right button {
+    background-color: #edbfff;
+    color: #111;
+    border: none;
+    width: 100%;
+    border-radius: 50px;
+    padding: 4px 0;
+    /* cursor: pointer; */
+}
+
+/* Page-3 */
+
+.page3 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 70px;
+    z-index: 10;
+}
+
+.page3 h1 {
+    font-size: 8vw;
+    font-weight: 300;
+    color: #0f0d0d;
+    margin-left: 100px;
+}
+
+.page3-part1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.page3-part1 img {
+    height: 400px;
+    margin-top: 170px;
+}
+
+.page3-part1 video {
+    height: 400px;
+
+}
+
+/* Page4 */
+
+.page4 {
+    min-height: 102vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    z-index: 10;
+    padding: 100px;
+    border-bottom: 1px solid #5a5a5a;
+}
+
+.page4 .elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+    position: relative;
+}
+
+.page4 .text-div {
+    /* background-color: blue; */
+    height: 120px;
+    overflow: hidden;
+}
+
+.page4 .elem h1 {
+    font-size: 7vw;
+    transition: all ease-out 0.5s;
+
+}
+
+.elem img {
+    height: 260px;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(15%) rotate(4deg);
+    transition: all ease-out 0.5s;
+}
+
+.elem .img1 {
+    left: 0;
+    top: 0;
+}
+
+.elem .img2 {
+    right: 0;
+    bottom: 0;
+}
+
+.elem:hover img {
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+
+.elem:hover h1 {
+    transform: translateY(-100%);
+}
+
+
+
+/* Page-5 */
+
+
+.page5 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    z-index: 10;
+    padding: 120px 100px;
+}
+
+.page5 h2 {
+    font-size: 4vw;
+    font-weight: 300;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 0 20px;
+    border-top: 1.5px solid #bababa;
+}
+
+.box:nth-last-child(1){
+    border-bottom: 1.5px solid #bababa;
+}
+
+
+.footer{
+    height: 90vh;
+    width: 100%;
+    background-color: #edbfff;
+}
