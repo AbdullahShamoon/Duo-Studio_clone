@@ -8,4 +8,4 @@
     - GSAP
     - ScrollTrigger
 
-### Live Link : 
+### Live Link : [https://abdullahshamoon.github.io/Duo-Studio_clone/](https://abdullahshamoon.github.io/Duo-Studio_clone/)
